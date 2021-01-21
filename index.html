@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+<div class="container-fluid">
+  <ul class="nav nav-pills pt-2 pb-2 bg-light mx-auto justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a></div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</div>
+
+<nav class="pt-2 pb-2 bg-dark">
+	<ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-start align-items-center align-items-sm-center">
+		<li><<img src="rose.jpg" alt="rose" height="55" /> </li>
+		 <li class="nav-item"><a class="nav-link" href="prep.html">Link</a></li>
+    <li class="nav-item bg-light"><a class="nav-link disabled" href="#">Disabled</a></li>
+	</ul>
+</nav>
+
+</header>
+
+<section>
+  
+  <div class="alert alert-warning alert-dismissible container">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Warning!</strong> This is practice section.
+  </div>
+
+  </section>
+
+
+<div class="toast" data-autohide="false">
+  <div class="toast-header">
+    <strong class="mr-auto text-primary">Hello!!</strong>
+    <small class="text-muted">5 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+  </div>
+  <div class="toast-body">
+    Some text inside the toast body
+  </div>
+</div>
+
+<section>
+
+         <article>
+
+        <div class="jumbotron jumbotron-fluid mt-5 bg-primary text-white text-center">
+          <div class="container">
+             <h3>“Like wildflowers; You must allow yourself to grow in all the places people thought you never would.”</h3>      
+               <p>By – E.V.</p>
+               <button type="button" class="btn btn-warning"><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Contact Us</a></button>
+          </div>
+        </div>
+          
+         </article>
+
+</section>
+
+<section>
+
+	  <div class="dropdown pb-5">
+    <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown"> Categories </button>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item"> Focal Flowers </a>
+        <a href="#" class="dropdown-item"> Filler Flowers </a>
+        <a href="#" class="dropdown-item"> Wild Flowers </a>
+      </div>
+  </div>  
+
+<button type="button" class="btn btn-warning"><a href="#" data-toggle="popover" title="Visit Us" data-content="Keep Smiling">Contact Us</a></button>
+
+  <div class="btn-group id="flowercategories" pt-5 pb-5">
+    <a class="btn btn-outline-info" href="index.html"> Categories </a>
+    <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown">
+    <span class="sr-only">Toggle Dropdown</span> </button>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header">Main Categories</h6>
+        <a href="#" class="dropdown-item"> Focal Flowers </a>
+        <a href="#" class="dropdown-item"> Filler Flowers </a>
+        <a href="#" class="dropdown-item"> Focal Flowers </a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Seasonal Categories</h6>
+        <a href="#" class="dropdown-item"> Inner Flowers </a>
+        <a href="#" class="dropdown-item"> Outer Flowers </a>
+      </div>
+  </div>  
+
+  <div class="btn-group">
+  <button type="button" class="btn btn-primary">Seasonal</button>
+  <button type="button" class="btn btn-primary">Permanent</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+       Rare
+    </button>
+    <div class="dropdown-menu">abc</a>
+      <a class="dropdown-item" href="#">xyz</a>
+    </div>
+  </div>
+</div>
+	
+</section>
+
+
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+</script>
+
+<div class="container pt-5 pb-5">
+  <ul class="pagination justify-content-center" style="margin:20px 0">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+
+
+</body>
+</html>
